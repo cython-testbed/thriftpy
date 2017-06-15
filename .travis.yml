@@ -16,7 +16,8 @@ matrix:
       script: tox -e flake8
 
 install:
-  - pip install cython tox
+  - pip install tox
+  - pip install --install-option="--no-cython-compile" https://github.com/cython/cython/archive/master.zip
 
 script:
   - tox -e py
