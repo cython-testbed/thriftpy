@@ -18,7 +18,7 @@ install_requires = [
 ]
 
 tornado_requires = [
-    "tornado>=4.0,<5.0",
+    "tornado>=4.0,<4.4",  # Python 2.6 support.
     "toro>=0.6"
 ]
 
